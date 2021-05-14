@@ -1,0 +1,232 @@
+        
+        .subscribe-me p {
+            font-size: 14px;
+            margin: auto auto 20px;
+            width: 80%;
+            color: #666666;
+        }
+                
+                .popup-newsletter {
+            border: 1px solid #cccccc;
+            display: inline-block;
+            width: 100%;
+        }
+                
+                
+        .modal-backdrop-test.in {
+        
+            opacity: .5;
+            
+        }
+        
+        .fade.in {
+            opacity: .5;
+            
+        }
+        body {
+            
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1040;
+            background-color: #222;
+            opacity: .9;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+        }    
+        
+        
+        .model-box-outer{
+          position: sticky;
+          top: 0;
+          z-index:999;
+         margin:0;
+        
+        }
+        
+        .close{
+            font-size:44px;
+            position:absolute;
+            top:-100px;
+            right:-22px;
+            color:red;
+        }
+        
+        .subscribe-wrap {
+            padding: 45px 42px 15px;
+        }
+                
+                
+        .subscribe-me .main-title {
+            text-align: Center;
+            color: #000 !important;
+            font-size: 38px;
+            text-shadow: 0px 0.8px 1px;
+            opacity: 0.8;
+            width: 100% !important;
+            line-height: 10px !important;
+            margin-top: 20px !important;
+            margin-bottom: 0 !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+        }
+                
+                
+        .subscribe-me {
+            background-color: #fff;
+            height: auto;
+            left: 0;
+            width: 830px;
+            margin: 100px auto;
+            padding: 12px;
+            right: 0;
+            top: 20%;
+            background-image: url('newsletter.jpg'); 
+            background-repeat: no-repeat;
+            background-position: 100% center;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+        }
+        
+        .theme-btn-2:hover{
+            color:#000 !important;
+        }
+        
+        
+        .popup-newsletter:before{
+            background-color:none !important;
+            background:none !important;
+        }
+                
+        #paragraph_div{
+            text-align: Center;
+            font-size: 18px;
+            line-height: 28px;
+            text-shadow: 0px 0.8px 0.5px;
+            opacity: 0.8;
+            width: 100% !important;
+            margin: auto auto 30px !important;
+        }  
+                
+        .subscribe-me .form-control.text {
+            border: 2px solid #cccccc;
+            text-align: center;
+            background-color: transparent;
+            font-size: 13px;
+            height: 40px;
+            line-height: 37px;
+            margin-bottom: 25px;
+            padding: 0 15px;
+            width: 100%;
+        }
+        
+                
+        #button_change{
+            display: inline;
+            background: red;
+            color: #fff;
+            padding-top: 10px;
+            padding-bottom: 8px;
+        }
+                
+        .list-inline {
+            padding-left: 0;
+            margin-left: -5px;
+            list-style: none;
+        }
+                
+        @media only screen and (max-width: 767px){
+             .subscribe-me {
+                background-color: #fff;
+                height: auto;
+                left: 0;
+                margin: auto;
+                padding: 12px;
+                right: 0;
+                top: 0%;
+                background-image: url('newsletter.jpg'); 
+                background-repeat: no-repeat;
+                background-position: 100% center;
+                width: 100%;
+                }
+            
+        .subscribe-me .main-title {
+            text-align: Center;
+            color: #000 !important;
+            font-size: 32px;
+            text-shadow: 0px 0.8px 1px;
+            opacity: 0.8;
+            width: 100% !important;
+            line-height: 10px !important;
+            margin-top: 20px !important;
+            margin-bottom: 0 !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+        }        
+           
+                #email_popup{
+                    width: 100% !important;
+                    margin-bottom: 25px;
+                }
+                    
+            
+        }
+                
+         @media only screen and (max-width:689px){
+             .subscribe-me {
+                background-color: #fff;
+                height: auto;
+                left: 0;
+                margin: auto;
+                padding: 12px;
+                right: 0;
+                top: 0%;
+            background-image: none; 
+                background-repeat: no-repeat;
+                background-position: 100% center;
+                width: 100%;
+                }
+            
+        .subscribe-me .main-title {
+            text-align: Center;
+            color: #000 !important;
+            font-size: 32px;
+            text-shadow: 0px 0.8px 1px;
+            opacity: 0.8;
+            width: 100% !important;
+            line-height: 10px !important;
+            margin-top: 20px !important;
+            margin-bottom: 0 !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+        }        
+           
+                #email_popup{
+                    width: 100% !important;
+                    margin-bottom: 25px;
+                }
+             
+             .col-xs-7 {
+            width: 100%;
+        }
+                    
+            
+        }       
+        
+        
+         @media only screen and (max-width:489px){
+        .subscribe-me .main-title {
+            font-size: 23px;
+        }  
+           
+        }
+        
+                
+        

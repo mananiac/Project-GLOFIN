@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<div class="container my-3">
+    <h3><strong>Top News by <span class="badge bg-secondary"> Project GLOFIN</span></strong></h3>
+    <hr>
+    <!-- <div class="accordion" id="newsAccordion"></div> -->
+</div>
+<!-- Here a loader is created which  
+             loads till response comes --><br><br>
+<div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status" id="loading">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<div class="container my-3 mx-auto w-50 ">
+
+    <table id="employees"> </table>
+</div>
+
+<script src="{{url_for('static', filename='news.js')}}"></script>
+{% endblock %}

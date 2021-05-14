@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="container my-3">
+    <h3><strong>Latest Stocks by <span class="badge bg-secondary"> Project GLOFIN</span></strong></h3>
+    <hr>
+</div>
+
+<div class="container">
+    
+<input  type="text"  id="CompanyName" for="CompanyName " placeholder="Enter Company Token"
+    title="Enter only alphabets">
+
+<button class="btn btn-dark" id="stocks-button" type="submit" onclick="companyDetails();">Click Me :)</button>
+
+</div>
+<div class="container my-3 mx-auto w-50 ">
+               
+    <table id="target-stocks"> </table>
+</div>
+
+
+<script src="{{url_for('static', filename='stocks.js')}}"></script>
+
+{% endblock %}

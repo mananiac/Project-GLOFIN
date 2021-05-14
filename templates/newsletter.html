@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="subscribe-me" runat="server" id="subscribe_div" style="z-index:9999999">
+    <a href="#close" class="sb-close-btn icon_close"></a>      
+    <div class="popup-newsletter" style="position:relative;">
+        <div class="col-xs-7 col-md-7 col-sm-7 text-center">
+            <div class="subscribe-wrap">
+                <h2 class="main-title" style="position:relative;" runat="server" id="title_div">Stay In Touch</h2>
+                <p runat="server" class="subParagraph_Sub" id="subParagraph_div" visible="false" style="text-align: right;padding: 0;margin: 14px 60px 30px;font-weight: 700;">Signup for our weekly newsletter</p>
+                 <p runat="server" id="paragraph_div">Signup for our weekly newsletter to get the latest news, update and amazing stuff delivered directly in your inbox. Sign up now! :)</p>
+                <div class="subscribe-form" >
+                    <div class="form-group col-sm-12 form-alert"></div>
+                    <div class="form-group" runat="server" id="form_div">
+                        <div class="mail-info">
+                        <input type="text" class="form-control text" ID="email_popup" style="display: inline;width: 60%;" placeholder="Enter your email address">
+                            <a href="javascript:checkIfEmail();" runat="server" id="button_change" class="btn small-btn">Subscribe Now</a>
+                        </div>
+                    </div>   
+                    <div class="alert alert-danger" id="notValidEmail" style="position:absolute; width:100%; top:0; left:50%; transform: translate(0,-50%); display:none;" role="alert">
+                      <strong>Email is not valid, Please Try Again!</strong> 
+                    </div>
+                     <div class="alert alert-success" id="ValidEmail" style="position:absolute; width:100%; top:0; left:50%; transform: translate(0,-50%); display:none;" role="alert">
+                      <strong>Thank you, Your information has been submitted!</strong> 
+                    </div>
+                     <div class="form-group" style="margin-bottom:0;">                                
+                        <label class="checkbox-inline black-color">
+                            <!-- <asp:CheckBox ID="CheckBox1" runat="server" /> <span runat="server" id="span_div" > Don't show this popup again </span> </label>                                 -->
+                    </div>
+
+            <div class="col-md-12 text-right" style="margin-top:20px; font-size:18px;" runat="server" id="socialmedia_div" visible="false">
+                    <ul class="list-inline social-link">
+                        <li> <a class="social_facebook" style="color:#3b5998;" href="#" target="_blank"><i class="fab fa-facebook"></i></a> </li>
+                        <li> <a class="social_Instagram" style="color:#e1306c;" href="#" target="_blank"><i class="fab fa-instagram"></i></a> </li>
+                        <li> <a class="social_Twitter" style="color:#1da1f2;" href="#" target="_blank"><i class="fab fa-twitter"></i></a> </li>
+                        <li> <a class="social_Youtube" style="color:#bd081c;" href="#" target="_blank"><i class="fab fa-youtube"></i></a> </li>
+
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{url_for('static', filename='newsletter.js')}}"></script>
+{% endblock %}

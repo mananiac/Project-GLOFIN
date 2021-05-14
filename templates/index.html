@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- particles.js container -->
+<!-- stats - count particles -->
+<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> particles.js lib - https://github.com/VincentGarreau/particles.js -->
+
+
+
+<div class="container">
+        <div class="avatar">
+
+                <img src="{{url_for('static', filename='logo.png')}}" />
+
+        </div>
+</div>
+<div class="container">
+        <h1><strong>Stocks are the best tool for realizing correct values</strong></h1><br>
+
+</div>
+<div class="container">
+
+        <h6>Seize opportunities with long-term probability advantages, precise transactions and improve wins</h6>
+</div>
+<div class="container" id="searchbar">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+</div>
+{% endblock %}
